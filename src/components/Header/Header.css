@@ -1,0 +1,45 @@
+.logo {
+    height: 90px;
+    width: 120px;
+    /* border: 2px solid aquamarine; */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px dashed greenyellow; */
+}
+
+/* MENU ITEMS */
+.header-menu{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid white; */
+    margin-left: 1rem;
+}
+
+.header-menu li {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    list-style-type: none;
+    font-size: 1.6rem;
+    color: white;
+    /* border: 2px dotted aqua; */
+    cursor: pointer;
+}
+
+.header-menu li:hover {
+    color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+    .header-menu {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 1rem;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}

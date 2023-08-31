@@ -1,0 +1,111 @@
+.programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    padding-bottom: 2.4rem;
+}
+.programs-header {
+    display: flex;
+    gap: 5rem;
+    font-weight: 900;
+    font-size: 3.25rem;
+    justify-content: center;
+    color: aquamarine;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+/* PROGRAMS CATAGORIES */
+.programs-catagories {
+    display: flex;
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.catagories {
+    border: 4px solid rgb(0, 255, 255);
+    box-shadow: 2px 2px 10px 2px aqua;
+    border-radius: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 2rem;
+    color: white;
+    /* justify-content: space-between; */
+    gap: 1.4rem;
+    animation: scaledown 0.8s linear;
+}
+
+.catagories>:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    fill: aqua;
+}
+
+.catagories>:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.catagories>:nth-child(3) {
+    font-size: 1rem;
+    font-family: cursive;
+    text-align: justify;
+}
+
+.join-now {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.catagories:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(237, 155, 3),
+        rgb(230, 37, 37),
+        rgb(246, 61, 246)
+    );
+    border: whitesmoke;
+    box-shadow: 5px 5px 40px 5px white;
+    animation: scale 0.8s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaledown {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.0);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .programs-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .programs-catagories {
+        flex-direction: column;
+    }
+}

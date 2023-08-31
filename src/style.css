@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --lightGray : #d9d9d9;
+    --gray: #9c9c9c;
+    --orange: #f48915;
+    --darkGray: #464d53;
+    --appColor: #50545b;
+}
+
+.App {
+    background-color: var(--appColor);
+    border-color: var(--appColor);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* FOR TEXT */
+.stroke-text {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: .0625rem;
+    -webkit-text-stroke-color: white;
+}
+
+/* STROKE TEXT WITH DIFFERENT COLOR */
+.stroke {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: .0625rem;
+    -webkit-text-stroke-color: aquamarine;
+}
+
+/* FOR BUTTON */
+.btn {
+    background-color: aqua;
+    border-radius: 16px;
+    padding: 8px;
+    font-weight: bold;
+    border: .25rem solid transparent;
+    transition: 300ms all;
+    width: 6.25rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* FOR BLUR */
+.blur {
+    background-color: rgb(8, 255, 8);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(320px);
+}

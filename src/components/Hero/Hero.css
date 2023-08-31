@@ -1,0 +1,202 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    /* border: 4px solid red; */
+}
+
+.left-h {
+    padding: 1rem;
+    /* border: 4px dashed rgb(50, 204, 83); */
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+
+/* AD */
+.ad {
+    border: 2px solid white;
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 1.25rem .8125rem;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ad>span {
+    z-index: 2;
+}
+
+.ad>div {
+    position: absolute;
+    /* background-color: magenta; */
+    background-image: linear-gradient(
+        to right,
+        rgb(22, 234, 22),
+        rgb(67, 249, 188)
+    );
+    width: 5rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+/* HERO TEXT */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: white;
+    text-overflow: inherit;
+}
+
+/* HERO MOTO */
+.hero-moto {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+}
+
+/* TEXT INSIDE DIV */
+.hero-text>div:nth-of-type(3){
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+/* FIGURES SECTION */
+.figures {
+    display: flex;
+    gap: 1rem;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1) {
+    color: white;
+    font-size: 1.875rem;
+}
+
+.figures>div>span:nth-of-type(2) {
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+/* FOR HERO BUTTON */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+
+.hero-buttons>:nth-child(1) {
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid aqua;
+}
+
+.hero-buttons>:nth-child(2) {
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+
+/* RIGHT SIDE */
+.right-h {
+    flex: 1;
+    /* border: 6px dotted white; */
+    position: relative;
+    background-color: var(--orange);
+}
+
+.right-h>.btn {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    color: black;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    position: absolute;
+    right: 6rem;
+    top: 6rem;
+    height: 95%;
+}
+
+/* HERO BLUR */
+
+.hero-blur {
+    width: 18rem;
+    height: 26rem;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-blur {
+        width: 12rem;
+    }
+
+    .ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+    }
+
+    .hero-text {
+        font-size: xxx-large;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-text>div:nth-of-type(3) {
+        font-size: small;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .figures>div>span:nth-of-type(1) {
+        font-size: xx-large;
+    }
+
+    .figures>div>span:nth-of-type(2) {
+        font-size: medium;
+    }
+
+    .right-h {
+        position: relative;
+        background: none;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 15rem;
+        left: 4rem;
+        top: 4rem;
+        align-self: center;
+    }
+}
