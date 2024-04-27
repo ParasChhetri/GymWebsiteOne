@@ -10,8 +10,6 @@ const Hero = () => {
     let transition = {type: 'spring', duration: 3}
   return (
     <div className="hero" id='home'>
-        {/* BLUR PART */}
-        <div className="blur hero-blur"></div>
         <div className="left-h">
             <Header />
             {/* AD PART */}

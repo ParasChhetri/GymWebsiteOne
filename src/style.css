@@ -26,6 +26,8 @@
     display: none;
 }
 
+
+
 /* FOR TEXT */
 .stroke-text {
     color: transparent;
@@ -55,12 +57,4 @@
 
 .btn:hover {
     cursor: pointer;
-}
-
-/* FOR BLUR */
-.blur {
-    background-color: rgb(8, 255, 8);
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(320px);
 }
